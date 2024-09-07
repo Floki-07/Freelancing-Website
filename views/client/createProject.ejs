@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen w-full p-10 flex-col bg-zinc-800 justify-start text-white">
+  <h1 class="text-2xl mb-4 font-semibold mx-auto">Create a New Project</h1>
+  <div class=" absolute bg-gray-500 rounded-full  hover:cursor-pointer hover:text-orange-600 w-[23px] h-[25px] right-10 ">
+    <a href="/client/dashboard">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        class="injected-svg" data-src="https://cdn.hugeicons.com/icons/arrow-left-02-solid-sharp.svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+        <path
+            d="M9.47311 18L10.8811 16.5858L7.31169 13.0006L20.4998 13.0006V11.0006L7.31125 11.0006L10.8812 7.41422L9.47323 6L3.49985 12.0003L9.47311 18Z"
+            fill="white"></path>
+    </svg>
+    </a>
+</div>
+  <div class="form block w-[40vw] mx-auto">
+    <form action="/projects/create" method="POST" class="flex flex-col gap-4 p-6 text-sm bg-zinc-900 rounded-lg shadow-lg">
+      
+      <!-- Project Title -->
+      <div>
+        <label for="title" class="text-zinc-400">Project Title:</label>
+        <input type="text" id="title" name="title" required placeholder="Enter the project title" class="p-2 rounded-md w-full outline-none bg-transparent border-2 border-zinc-600">
+      </div>
+
+      <!-- Description -->
+      <div>
+        <label for="description" class="text-zinc-400">Description:</label>
+        <textarea id="description" name="description" required placeholder="Describe the project" class="p-2 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-600" rows="5"></textarea>
+      </div>
+
+      <!-- Skills Required -->
+      <div>
+        <label for="skills" class="text-zinc-400">Skills Required:</label>
+        <input type="text" id="skills" name="skills" required placeholder="Enter required skills (e.g. Web Development, Design)" class="p-2 rounded-md w-full outline-none bg-transparent border-2 border-zinc-600">
+      </div>
+
+      <!-- Budget -->
+      <div>
+        <label for="budget" class="text-zinc-400">Budget (₹):</label>
+        <input type="number" id="budget" name="budget" required placeholder="Enter the project budget" class="p-2 rounded-md w-full outline-none bg-transparent border-2 border-zinc-600">
+      </div>
+
+      <!-- Deadline -->
+      <div>
+        <label for="deadline" class="text-zinc-400">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" required class="p-2 rounded-md w-full outline-none bg-transparent border-2 border-zinc-600">
+      </div>
+
+      <!-- Project Category -->
+      <div>
+        <label for="category" class="text-zinc-400">Project Category:</label>
+        <select id="category" name="category" required class="p-2 rounded-md w-full outline-none bg-transparent border-2 border-zinc-600">
+          <option class="bg-zinc-700" value="" disabled selected>Select Category</option>
+          <option class="bg-zinc-700" value="web_dev">Web Development</option>
+          <option class="bg-zinc-700" value="design">Design</option>
+          <option class="bg-zinc-700" value="marketing">Marketing</option>
+          <option class="bg-zinc-700" value="content_creation">Data Analytics</option>
+          <!-- <option class="bg-zinc-700" value="content_creation"></option> -->
+          <!-- <option class="bg-zinc-700" value="content_creation">Content Creation</option>
+          <option class="bg-zinc-700" value="content_creation">Content Creation</option>
+          <option class="bg-zinc-700" value="content_creation">Content Creation</option> -->
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="bg-blue-600 w-[15vw] mx-auto hover:bg-zinc-500 text-white font-bold py-2 px-4 rounded-md">Create Project</button>
+    </form>
+  </div>
+
+</body>
+</html>

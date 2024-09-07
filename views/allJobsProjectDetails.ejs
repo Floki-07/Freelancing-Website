@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" flex min-h-screen w-full  flex-col bg-zinc-800 justify-start ">
+    <%- include('partials/freenavbar') %>
+    <main>
+        <div class="w-[80vw] mx-auto h-screen p-3">
+            <div class=" flex items-center justify-between w-[73vw]">
+                <h3 class="text-white font-semibold text-xl mt-5">Project Details</h3>
+
+
+                <div class="bg-gray-500 rounded-full p-1 hover:cursor-pointer hover:text-orange-600">
+                    <a href="/freeDashboard">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        class="injected-svg" data-src="https://cdn.hugeicons.com/icons/arrow-left-02-solid-sharp.svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                        <path
+                            d="M9.47311 18L10.8811 16.5858L7.31169 13.0006L20.4998 13.0006V11.0006L7.31125 11.0006L10.8812 7.41422L9.47323 6L3.49985 12.0003L9.47311 18Z"
+                            fill="white"></path>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <div class="projectbody flex flex-wrap h-[70vh] w-[80vw] bg-zinc-800 mt-3 p-2 gap-1   ">
+
+                <div class="left w-[23vw] flex flex-col gap-2 text-white">
+                    <img src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="project image" srcset="" class="h-[25vh] w-[20vw] rounded-lg">
+
+                    <h2 class=" text-sm text-gray-400 mt-3 font-semibold">Description</h2>
+
+                    <div class="mt-2  text-sm text-gray-300 tracking-tight w-[20vw] ">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem enim, odit deleniti, in optio
+                        doloremque, delectus dolores ducimus quae exercitationem fuga debitis rerum placeat expedita
+                        provident cupiditate architecto eum nostrum?
+                    </div>
+
+
+
+                    <form action="post">
+                    <div class="flex gap-2">
+                        <input type="number" placeholder="Enter your compensation" class="rounded-lg text-black px-2">
+                        <a href="/sendRequest" class="px-3 py-2 bg-green-600  min-w-[6vw] rounded-md inline ">
+                            Request 
+                        </a>                     
+                    </div>
+                </form>
+                </div>
+
+
+                <div class="right text-white  bg-zinc-700 rounded-lg p-2 pt-[10vh]
+                 flex justify-start w-[50vw] h-[80vh] gap-2 flex-col">
+                    <h2 class="text-md text-white font-thin "><span
+                            class="font-semibold mr-3 w-[20vw] ">Title:</span>Lorem ipsum dolor sit </h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3 w-[20vw] ">Client
+                            Name:</span>Mr. Roger Fedrer</h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Category:</span>Web
+                        Development </h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Budget:</span>Rs.20000
+                    </h2>
+                    <h2 class="text-md text-white font-thin "><span
+                            class="font-semibold mr-3">Deadline:</span>24/12/2024 </h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Skills
+                            required:</span>Js, Python , Mongodb</h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3"> Additional
+                            information:</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur,
+                        voluptate soluta mollitia minus quaerat atque assumenda nihil deserunt suscipit blanditiis
+                        ratione consequatur cupiditate dolores molestiae enim rerum, maiores quam, dolorem iusto?
+                        Eligendi omnis unde cum nostrum debitis perferendis adipisci!</h2>
+
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Days remaining:</span>4
+                        days left </h2>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

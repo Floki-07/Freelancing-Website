@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Dashboard - Freelance Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+    </style>
+</head>
+
+<body class="bg-zinc-800 text-white min-h-screen">
+
+
+    <%- include('../partials/clientNavbar') %>
+        <!-- Main Content -->
+        <div class="container mx-auto py-10">
+
+            <!-- Welcome Message -->
+            <div class="mb-8 text-start">
+                <h2 class="text-3xl font-semibold">Check requests for your projects</h2>
+                <p class="text-zinc-400">You can either accept or reject them</p>
+            </div>
+
+            <!-- Dashboard Content -->
+            
+
+                <!-- Active Projects Section -->
+                <div class="bg-zinc-900 p-2 rounded-lg shadow-md  w-[55vw] mx-auto">
+
+                    <ul class="flex items-start h-[80vh] overflow-y-auto flex-col gap-4  ">
+
+                        <div class="requests w-[48vw] mx-auto px-1 mb-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="requests w-[48vw] mx-auto px-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="requests w-[48vw] mx-auto px-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="requests w-[48vw] mx-auto px-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="requests w-[48vw] mx-auto px-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="requests w-[48vw] mx-auto px-1 h-[25vh] justify-between bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700 flex">
+                            <img src="../images/default.jpg" alt=""
+                                class="h-[13vh] my-auto bg-cover w-[7vw] rounded-lg mr-3 ">
+
+                            <div class="mt-6 w-[35vw]">
+                                <h2 class="tracking-tight text-gray-300 font-thin "><span
+                                        class="text-blue-600 font-semibold mr-2">Freelancer's
+                                        Name</span> Ziyad Auti </h2>
+
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Project Title</span>Freelancing </h2>
+                                <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                                        class=" font-semibold mr-2">Compensation</span>₹12000 </h2>
+                                <a href="/client/freelancer" class="text-sm tracking-tight text-blue-500">View Profile
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="buttons">
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-green-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-green-800">
+                                        Accept</div>
+                                </a>
+                                <a href="/project" class="mx-auto w-[4vw]">
+                                    <div
+                                        class="bg-red-700 px-3 py-1 text-white mt-3 mx-auto w-[5vw] rounded-lg hover:bg-red-800">
+                                        Reject</div>
+                                </a>
+                            </div>
+                        </div>
+                    </ul>
+             
+
+
+            </div>
+
+
+
+        </div>
+
+</body>
+
+</html>

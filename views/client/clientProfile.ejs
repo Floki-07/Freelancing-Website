@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freelancer Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-800 text-white">
+  <!-- Navbar -->
+  <%- include('../partials/clientNavbar') %>
+
+  <!-- Profile Section -->
+  <!-- Profile Overview -->
+    <div class="mt-10 bg-zinc-900 p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-bold mb-4">Profile Overview</h3>
+      <div class="flex items-center space-x-4">
+        <img src="https://via.placeholder.com/80" alt="Profile Picture"
+          class="w-20 h-20 rounded-full border-2 border-zinc-700">
+        <div>
+          <h4 class="text-lg font-semibold">Client Name</h4>
+          <p class="text-zinc-400">Client Company</p>
+          <p class="text-zinc-400">Email: client@example.com</p>
+        </div>
+      </div>
+      <a href="/clientProfile" class="block text-center text-blue-400 hover:underline mt-4">Edit Profile</a>
+    </div> 
+</body>
+</html>
+
+</body>
+</html>

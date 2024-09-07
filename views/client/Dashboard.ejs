@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard - Freelance Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+    }
+  </style>
+</head>
+
+<body class="bg-zinc-800 text-white min-h-screen">
+
+  <!-- Navbar -->
+  <!-- <nav class="bg-zinc-900 p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Freelance Hub</h1>
+      <ul class="flex space-x-4">
+        <li><a href="/clientDashboard" class="hover:text-blue-400">Dashboard</a></li>
+        <li><a href="/clientProjects" class="hover:text-blue-400">My Projects</a></li>
+        <li><a href="/clientProfile" class="hover:text-blue-400">Profile</a></li>
+        <li><a href="/logout" class="hover:text-blue-400">Logout</a></li>
+      </ul>
+    </div>
+  </nav> -->
+
+<%- include('../partials/clientNavbar') %>
+  <!-- Main Content -->
+  <div class="container mx-auto py-10">
+
+    <!-- Welcome Message -->
+    <div class="mb-8 text-start">
+      <h2 class="text-3xl font-semibold">Welcome back, <span class="text-blue-400">Mr.Roger Federer</span></h2>
+      <p class="text-zinc-400">Here’s a summary of your ongoing projects and details.</p>
+    </div>
+
+    <!-- Dashboard Content -->
+    <div class="flex gap-4">
+
+      <!-- Active Projects Section -->
+      <div class="bg-zinc-900 p-6 rounded-lg shadow-md  w-[100vw]">
+        <h3 class="text-xl font-bold mb-4">Your Active Projects</h3>
+        <ul class="flex items-start gap-5 h-[80vh] flex-wrap overflow-y-auto  ">
+
+          <div class="cards w-[20vw] h-[50vh] bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" class="h-[vh] mx-auto bg-cover w-[60%] rounded-lg ">
+
+            <div class="mt-6">
+              <h2 class="tracking-tight text-gray-300 font-thin "><span class="text-blue-600 font-semibold mr-2">Project
+                  Name</span> Lorem, ipsum dolor.rem, ipsum dolorem, ipsum dolo </h2>
+              <h2 class="tracking-tight text-gray-300 font-thin mt-2 text-sm"><span
+                  class="text-red-600 font-semibold mr-2">Deadline</span>24/02/2024 </h2>
+              <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                  class=" font-semibold mr-2">Client</span>Mr.Roger Fedrer </h2>
+
+              <a href="/project" class="mx-auto w-[4vw]">
+                <div class="bg-blue-700 px-3 py-1 text-white mt-3 mx-auto w-[9vw] rounded-lg hover:bg-orange-600">Check
+                  Details</div>
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+          <div class="cards w-[20vw] h-[50vh] bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" class="h-[vh] mx-auto bg-cover w-[60%] rounded-lg ">
+
+            <div class="mt-6">
+              <h2 class="tracking-tight text-gray-300 font-thin "><span class="text-blue-600 font-semibold mr-2">Project
+                  Name</span> Lorem, ipsum dolor.rem, ipsum dolorem, ipsum dolo </h2>
+              <h2 class="tracking-tight text-gray-300 font-thin mt-2 text-sm"><span
+                  class="text-red-600 font-semibold mr-2">Deadline</span>24/02/2024 </h2>
+              <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                  class=" font-semibold mr-2">Client</span>Mr.Roger Fedrer </h2>
+
+              <a href="/project" class="mx-auto w-[4vw]">
+                <div class="bg-blue-700 px-3 py-1 text-white mt-3 mx-auto w-[9vw] rounded-lg hover:bg-orange-600">Check
+                  Details</div>
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+          <div class="cards w-[20vw] h-[50vh] bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" class="h-[vh] mx-auto bg-cover w-[60%] rounded-lg ">
+
+            <div class="mt-6">
+              <h2 class="tracking-tight text-gray-300 font-thin "><span class="text-blue-600 font-semibold mr-2">Project
+                  Name</span> Lorem, ipsum dolor.rem, ipsum dolorem, ipsum dolo </h2>
+              <h2 class="tracking-tight text-gray-300 font-thin mt-2 text-sm"><span
+                  class="text-red-600 font-semibold mr-2">Deadline</span>24/02/2024 </h2>
+              <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                  class=" font-semibold mr-2">Client</span>Mr.Roger Fedrer </h2>
+
+              <a href="/project" class="mx-auto w-[4vw]">
+                <div class="bg-blue-700 px-3 py-1 text-white mt-3 mx-auto w-[9vw] rounded-lg hover:bg-orange-600">Check
+                  Details</div>
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+          <div class="cards w-[20vw] h-[50vh] bg-zinc-800 shadow-lg  rounded-xl  p-2 shadow-black border-2 border-zinc-700">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="" class="h-[vh] mx-auto bg-cover w-[60%] rounded-lg ">
+
+            <div class="mt-6">
+              <h2 class="tracking-tight text-gray-300 font-thin "><span class="text-blue-600 font-semibold mr-2">Project
+                  Name</span> Lorem, ipsum dolor.rem, ipsum dolorem, ipsum dolo </h2>
+              <h2 class="tracking-tight text-gray-300 font-thin mt-2 text-sm"><span
+                  class="text-red-600 font-semibold mr-2">Deadline</span>24/02/2024 </h2>
+              <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
+                  class=" font-semibold mr-2">Client</span>Mr.Roger Fedrer </h2>
+
+              <a href="/project" class="mx-auto w-[4vw]">
+                <div class="bg-blue-700 px-3 py-1 text-white mt-3 mx-auto w-[9vw] rounded-lg hover:bg-orange-600">Check
+                  Details</div>
+              </a>
+
+
+
+            </div>
+
+
+          </div>
+        </ul>
+        <!-- <a href="/clientProjects" class="block text-center text-blue-400 hover:underline mt-4">View All Projects</a> -->
+      </div>
+
+      <!-- Project Summary Section -->
+      <!-- <div class="bg-zinc-900 p-6 rounded-lg shadow-md">
+        <h3 class="text-xl font-bold mb-4">Project Summary</h3>
+        <div class="space-y-4">
+          <div class="flex justify-between">
+            <span class="text-zinc-400">Total Projects:</span>
+            <span class="font-bold">5</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-zinc-400">Active Projects:</span>
+            <span class="font-bold">2</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-zinc-400">Completed Projects:</span>
+            <span class="font-bold">3</span>
+          </div>
+          <div class="flex justify-between">
+            <span class="text-zinc-400">Pending Reviews:</span>
+            <span class="font-bold">1</span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Create New Project Section -->
+      <div class="bg-zinc-900 p-6 rounded-lg shadow-md w-[25vw] h-[40vh]">
+        <h3 class="text-xl font-bold mb-4">Create New Project</h3>
+        <p class="text-zinc-400 mb-4">Ready to start a new project? Click below to create a detailed project brief and
+          invite freelancers to bid.</p>
+        <a href="/client/createProject"
+          class="block w-full text-center bg-blue-500 hover:bg-blue-600 text-white py-2 rounded-lg">Create New
+          Project</a>
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+</body>
+
+</html>

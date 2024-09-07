@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Registration - Freelance Hub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex min-h-screen w-full p-10 flex-col bg-zinc-800 justify-start ">
+    <h1 class="text-2xl mb-2 text-white font-semibold mx-auto">
+        <span class="font-thin">Register yourself as a</span> Client!
+    </h1>
+    <div class="form block h-[72vh] w-[35vw] mx-auto">
+        <form action="" class="flex flex-col gap-2 p-4 text-sm text-white">
+            <!-- Full Name -->
+            <div>
+                <label for="name" class="text-zinc-400">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+            
+            <!-- Company Name -->
+            <div>
+                <label for="company" class="text-zinc-400">Company Name:</label>
+                <input type="text" id="company" name="company" required placeholder="Enter your company name" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label for="email" class="text-zinc-400">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            <!-- Contact Number -->
+            <div>
+                <label for="contact" class="text-zinc-400">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required placeholder="Enter your contact number" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            <!-- Project Budget -->
+            <!-- <div>
+                <label for="budget" class="text-zinc-400">Project Budget (in USD):</label>
+                <input type="number" id="budget" name="budget" required placeholder="Enter your budget" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            Project Deadline
+            <div>
+                <label for="deadline" class="text-zinc-400">Project Deadline:</label>
+                <input type="date" id="deadline" name="deadline" required class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div> -->
+
+            <!-- Project Description -->
+            <div>
+                <label for="project_desc" class="text-zinc-400">Company Description:</label>
+                <textarea id="project_desc" name="project_desc" required placeholder="Describe your company like what it does" class="p-1 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700" rows="5"></textarea>
+            </div>
+
+            <!-- Portfolio/Company Website -->
+            <div>
+                <label for="website" class="text-zinc-400">Company Website (optional):</label>
+                <input type="url" id="website" name="website" placeholder="Enter your company website" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label for="password" class="text-zinc-400">Password:</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+
+            <!-- Register Button -->
+            <button type="submit" class=" w-1/3 mx-auto bg-blue-600 hover:bg-zinc-600 text-white font-bold py-2 px-4 rounded">Register</button>
+        </form>
+
+        <a href="/client/dashboard" class="text-white mt-4 block text-center">Go to Dashboard</a>
+    </div>
+</body>
+</html>
