@@ -11,7 +11,7 @@
         <span class="font-thin">Register yourself as a</span> Freelancer!
     </h1>
     <div class="form block h-[72vh] w-[35vw] mx-auto">
-        <form action="" class="flex flex-col gap-2 p-4 text-sm text-white">
+        <form action="/free/register/save"  method="post" class="flex flex-col gap-2 p-4 text-sm text-white">
             <div>
                 <label for="name" class="text-zinc-400">Name:</label>
                 <input type="text" id="name" name="name" required placeholder="Enter your name" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
@@ -21,20 +21,24 @@
                 <input type="email" id="email" name="email" required placeholder="Enter your email" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
             <div>
+                <label for="phone" class="text-zinc-400">Phone no:</label>
+                <input type="text" id="phone" name="phone" required placeholder="Enter your phone no" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+            </div>
+            <div>
                 <label for="skills" class="text-zinc-400">Skills:</label>
                 <input type="text" id="skills" name="skills" required placeholder="Web development,Data Science etc" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
             <div>
                 <label for="experience" class="text-zinc-400">Experience (years):</label>
-                <input type="number" id="experience" name="experience" required placeholder="Enter your experience in years" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+                <input type="number" id="experience" name="exp" required placeholder="Enter your experience in years" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
             <div>
                 <label for="qualification" class="text-zinc-400">Highest Qualification:</label>
-                <input type="text" id="qualification" name="qualification" required placeholder="Enter your highest qualification Ex : B.E. in CSE " class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+                <input type="text" id="qualification" name="qual" required placeholder="Enter your highest qualification Ex : B.E. in CSE " class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
             <div>
                 <label for="description" class="text-zinc-400">Description:</label>
-                <textarea id="description" name="description" required placeholder="Describe yourself" class="p-1 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700" rows="5"></textarea>
+                <textarea id="description" name="desc" required placeholder="Describe yourself" class="p-1 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700" rows="5"></textarea>
             </div>
             <div>
                 <label for="portfolio" class="text-zinc-400">Portfolio:</label>

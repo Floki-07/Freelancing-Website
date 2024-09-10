@@ -11,7 +11,7 @@
     <h2 class="text-3xl font-bold text-gray-200 text-center mb-6">Freelancer Login</h2>
     
     <!-- Login Form -->
-    <form>
+    <form action="/freelancer/login" method="post">
       <!-- Email Field -->
       <div class="mb-4">
         <label for="email" class="block text-gray-400 font-medium mb-2">Email</label>
@@ -34,13 +34,13 @@
       </div>
       
       <!-- Submit Button -->
-      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Login</button>
+      <input type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300">Login</input>
     </form>
     
     <!-- Register Link -->
     <p class="text-center text-gray-400 mt-6">
       New to Freelance Hub? 
-      <a href="/free/register/" class="text-blue-400 hover:underline">Register here</a>
+      <a href="/free/register" class="text-blue-400 hover:underline">Register here</a>
     </p>
   </div>
 </body>

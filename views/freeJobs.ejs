@@ -18,22 +18,28 @@
             <h2 class="text-white font-semibold text-[15px] mt-3 ">Availble Work</h2>
 
             <div class="projects flex flex-wrap h-[70vh] w-[80vw] bg-zinc-800 mt-3 p-2 gap-4 justify-start  ">
-                <div
-                    class="cards w-[20vw] h-[50vh] bg-zinc-700  rounded-xl shadow-lg p-2 shadow-black ">
+                <% projects.forEach(project => { %>
+
+
+                <div class="cards w-[20vw] h-[50vh] bg-zinc-700  rounded-xl shadow-lg p-2 shadow-black ">
                     <img src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="" class="h-[vh] mx-auto bg-cover w-[60%] rounded-lg ">
 
+
+                    
+                     
+                    
                     <div class="mt-6">
                         <h2 class="tracking-tight text-gray-300 font-thin "><span
-                                class="text-blue-600 font-semibold mr-2">Project Name</span>Freelancing webapp</h2>
+                                class="text-blue-600 font-semibold mr-2">Project Name</span><%=project.title %></h2>
                         <h2 class="tracking-tight text-gray-300 font-thin "><span
-                                class="text-green-600 font-semibold mr-2">Category</span>Web development</h2>
+                                class="text-green-600 font-semibold mr-2">Category</span><%=project.category %></h2>
                         <h2 class="tracking-tight text-gray-300 font-thin mt-2 text-sm"><span
-                                class="text-red-600 font-semibold mr-2">Deadline</span>24/02/2024 </h2>
+                                class="text-red-600 font-semibold mr-2">Deadline</span><%=project.deadline %> </h2>
                         <h2 class="tracking-tight text-gray-500 font-medium mt-2 text-sm"><span
-                                class=" font-semibold mr-2">Client</span>Mr.Roger Fedrer </h2>
+                            class=" font-semibold mr-2">Client</span><%=project.client.name %> </h2>
 
-                        <a href="/allJobsProjectDetails" class="mx-auto w-[4vw]">
+                        <a href="/allJobsProjectDetails/<%=project._id %>" class="mx-auto w-[4vw]">
                             <div
                                 class="bg-blue-700 px-3 py-1 text-white mt-3 mx-auto w-[9vw] rounded-lg hover:bg-orange-600">
                                 Check Details</div>
@@ -43,8 +49,11 @@
 
                     </div>
 
+                 
+
 
                 </div>
+                <% }) %>
             </div>
         </div>
 

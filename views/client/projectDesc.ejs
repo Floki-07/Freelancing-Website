@@ -9,13 +9,13 @@
 </head>
 
 <body class=" flex min-h-screen w-full  flex-col bg-zinc-800 justify-start ">
-    <%- include('partials/freenavbar') %>
+    <%- include('../partials/clientNavbar') %>
     <main>
         <div class="w-[80vw] mx-auto h-screen p-3">
             <div class=" flex items-center justify-between w-[73vw]">
                 <h3 class="text-white font-semibold text-xl mt-5">Project Details</h3>
 
-
+<!-- 
                 <div class="bg-gray-500 rounded-full p-1 hover:cursor-pointer hover:text-orange-600">
                     <a href="/freeDashboard">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -26,9 +26,8 @@
                             fill="white"></path>
                     </svg>
                     </a>
-                </div>
+                </div> -->
             </div>
-
 
 
 
@@ -41,38 +40,34 @@
                     <h2 class=" text-sm text-gray-400 mt-3 font-semibold">Description</h2>
 
                     <div class="mt-2  text-sm text-gray-300 tracking-tight w-[20vw] ">
-                       <%=project.desc %>
+                        <%=project.desc%> 
                     </div>
 
+                    <div class="flex gap-2">
+                    
+                        <a href="/delete/<%=project._id %>" class="px-3 py-2 bg-red-600 min-w-[8vw] rounded-md inline ">
+                            Delete Project
+                        </a>
 
-
-                    <form action="/sendrequest/<%= project._id %>/<%=project.client._id  %>" method="post">
-                    <div class="flex gap-2 mt-6">
-                        <input type="text" placeholder="Enter your compensation" name="comp" class="rounded-lg text-black px-2">
-                        <button type="submit" class="px-3 py-2 bg-green-600  min-w-[6vw] rounded-md inline ">
-                            Request 
-                        </button>                     
                     </div>
-                </form>
                 </div>
 
 
                 <div class="right text-white  bg-zinc-700 rounded-lg p-2 pt-[10vh]
-                 flex justify-start w-[50vw] h-[60vh] gap-2 flex-col ">
+                 flex justify-start w-[50vw] h-[60vh] gap-2 flex-col">
                     <h2 class="text-md text-white font-thin "><span
-                            class="font-semibold mr-3 w-[20vw] ">Title:</span> <%=project.title %></h2>
-                    <h2 class="text-md text-white font-thin "><span
-                            class="font-semibold mr-3 w-[20vw] ">Title:</span> <%=project.client.name %></h2>
-                   
-                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Category:</span> <%=project.category %></h2>
+                            class="font-semibold mr-3 w-[20vw] ">Title:</span><%=project.title %> </h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3 w-[20vw] ">Client Name</span><%=name%></h2>
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Category:</span><%=project.category %> </h2>
                     <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Budget:</span><%=project.budget %>
                     </h2>
                     <h2 class="text-md text-white font-thin "><span
-                            class="font-semibold mr-3">Deadline:</span> <%=project.deadline%> </h2>
+                            class="font-semibold mr-3">Deadline:</span><%=project.deadline %> </h2>
                     <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Skills
-                            required:</span> <%=project.skills %></h2>
-                 
-                    <!-- <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Days remaining:</span>4
+                            required:</span><%=project.skills %></h2>
+                  
+<!-- 
+                    <h2 class="text-md text-white font-thin "><span class="font-semibold mr-3">Days remaining:</span>4
                         days left </h2> -->
                 </div>
             </div>

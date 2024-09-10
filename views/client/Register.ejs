@@ -11,7 +11,7 @@
         <span class="font-thin">Register yourself as a</span> Client!
     </h1>
     <div class="form block h-[72vh] w-[35vw] mx-auto">
-        <form action="" class="flex flex-col gap-2 p-4 text-sm text-white">
+        <form action="/client/register/save" method="post" class="flex flex-col gap-2 p-4 text-sm text-white">
             <!-- Full Name -->
             <div>
                 <label for="name" class="text-zinc-400">Full Name:</label>
@@ -21,7 +21,7 @@
             <!-- Company Name -->
             <div>
                 <label for="company" class="text-zinc-400">Company Name:</label>
-                <input type="text" id="company" name="company" required placeholder="Enter your company name" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+                <input type="text" id="company" name="cname" required placeholder="Enter your company name" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
 
             <!-- Email -->
@@ -33,7 +33,7 @@
             <!-- Contact Number -->
             <div>
                 <label for="contact" class="text-zinc-400">Contact Number:</label>
-                <input type="tel" id="contact" name="contact" required placeholder="Enter your contact number" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
+                <input type="tel" id="contact" name="phone" required placeholder="Enter your contact number" class="p-1 rounded-md w-full outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700">
             </div>
 
             <!-- Project Budget -->
@@ -51,7 +51,7 @@
             <!-- Project Description -->
             <div>
                 <label for="project_desc" class="text-zinc-400">Company Description:</label>
-                <textarea id="project_desc" name="project_desc" required placeholder="Describe your company like what it does" class="p-1 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700" rows="5"></textarea>
+                <textarea id="project_desc" name="desc" required placeholder="Describe your company like what it does" class="p-1 rounded-md w-full resize-none outline-none bg-transparent border-2 border-zinc-700 bg-zinc-700" rows="5"></textarea>
             </div>
 
             <!-- Portfolio/Company Website -->
